@@ -28,9 +28,9 @@ def test_MiddleOfTheRoadItems():
 def test_LittleItems():
   #Arrange
     order = MockSet()
-    order.add(MockModel(quantity=2))
-    order.add(MockModel(quantity=2))
-    delivery_distance = 3
+    order.add(MockModel(quantity=3))
+    order.add(MockModel(quantity=1))
+    delivery_distance = 2
   #Act
     cost = Delivery.calculate(order,delivery_distance)
   #Assert
